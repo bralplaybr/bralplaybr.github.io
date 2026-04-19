@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bral Play | Atendimento no WhatsApp</title>
+  <meta name="description" content="Assista à demonstração e fale com o atendimento pelo WhatsApp." />
+  <style>
+    :root{
+      --bg:#080b12;
+      --card:#111827;
+      --line:rgba(255,255,255,.08);
+      --text:#ffffff;
+      --muted:#c7d0ea;
+      --primary:#25D366;
+      --primary-dark:#18b855;
+      --button-dark:#1f2937;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{width:100%;overflow-x:hidden}
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#06080e 0%, #0b1220 100%);
+      color:var(--text);
+      min-height:100vh;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:460px;
+      margin:0 auto;
+      padding:14px 14px 34px;
+    }
+
+    .player-box{
+      width:100%;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 18px 40px rgba(0,0,0,.35);
+    }
+
+    .player-frame{
+      position:relative;
+      width:100%;
+      height:0;
+      padding-bottom:177.778%;
+      background:#000;
+    }
+
+    .player-frame iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:none;
+    }
+
+    .content{
+      padding:18px 10px 0;
+      text-align:center;
+    }
+
+    h1{
+      font-size:28px;
+      line-height:1.05;
+      margin-bottom:10px;
+      letter-spacing:-0.02em;
+    }
+
+    p{
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.5;
+      margin-bottom:18px;
+    }
+
+    .actions{
+      display:grid;
+      gap:12px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:54px;
+      padding:0 18px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:16px;
+      transition:.2s ease;
+    }
+
+    .btn:hover{transform:translateY(-1px)}
+
+    .btn-primary{
+      background:var(--primary);
+      color:#06110a;
+      box-shadow:0 14px 26px rgba(37,211,102,.25);
+    }
+
+    .btn-primary:hover{background:var(--primary-dark)}
+
+    .btn-secondary{
+      background:var(--button-dark);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .note{
+      margin-top:14px;
+      text-align:center;
+      color:#9fb0d9;
+      font-size:13px;
+    }
+
+    @media (max-width:420px){
+      .wrap{padding:10px 10px 28px}
+      h1{font-size:24px}
+      p{font-size:14px}
+      .btn{min-height:52px;font-size:15px}
+      .player-box{border-radius:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="player-box">
+      <div class="player-frame">
+        <iframe allow="fullscreen;autoplay" allowfullscreen src="https://streamable.com/e/y95pra?autoplay=1" title="Demonstração em vídeo"></iframe>
+      </div>
+    </div>
+
+    <section class="content">
+      <h1>Fale com o atendimento</h1>
+      <p>Assista ao vídeo acima e chame no WhatsApp para tirar dúvidas e receber atendimento.</p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/5537984018475?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+        <a class="btn btn-secondary" href="https://wa.me/5537984018475?text=Ol%C3%A1%2C%20preciso%20de%20ajuda" target="_blank" rel="noopener noreferrer">Suporte via WhatsApp</a>
+      </div>
+
+      <div class="note">Atendimento rápido direto pelo WhatsApp.</div>
+    </section>
+  </main>
+</body>
+</html>
